@@ -1,0 +1,20 @@
+body {
+  background-color: #db7687;
+}
+
+.box1 {
+  border: 1px solid #550c55;
+  width: 100%;
+  padding-top: 5%;
+  color: #fae2e2;
+  margin-bottom: 1%;
+}
+
+.box2 {
+  border: 1px solid #550c55;
+  width: 100%;
+  padding-top: 2.5%;
+  color: #fae2e2;
+}
+
+/*# sourceMappingURL=style.css.map */

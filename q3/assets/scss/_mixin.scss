@@ -1,0 +1,5 @@
+$pesudo:false !default;
+@mixin name($pesudo,$x,$y) {
+          width: 100%;
+          padding-top:($x/$y)* 1%;
+}

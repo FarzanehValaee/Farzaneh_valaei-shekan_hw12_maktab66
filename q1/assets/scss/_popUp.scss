@@ -1,0 +1,16 @@
+@import 'colors';
+#popUp{
+  display: none;
+  box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1%;
+  position: fixed;
+  top: 0;
+  right: 15%;
+  left: 15%;
+  background-color: white;
+  // animation:pop 8s;
+  p{
+    margin: 0 auto;
+  }
+}
+

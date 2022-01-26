@@ -1,0 +1,30 @@
+@import 'colors';
+@import 'mixin';
+.wrapper{
+          margin:1% 3%;
+}
+#registerForm {
+               position: relative;
+               background-color:$light_gray;
+               padding: 1%;
+                    label,input[type="submit"]{
+                        margin:1%;
+                    }
+                    input[type='text'], textarea{
+                       @include Area(95%,1%,0.5%);
+                       @include radius();
+                       color: $gray;
+                    }
+                    select{
+                     @include Area(96%,1%,0.5%);
+                     @include radius();
+
+                    }
+                    input[type="submit"]{
+                       @include registerBtn();
+                    }
+                    textarea{
+                        resize: none;
+                    }
+}
+

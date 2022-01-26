@@ -1,0 +1,19 @@
+$pink:rgb(219, 118, 135);
+$deep_purple:rgb(85, 12, 85);
+$light:rgb(250, 226, 226);
+@import 'mixin';
+body{
+          background-color: $pink;
+}
+.box1{
+          border:1px solid $deep_purple;
+          @include name(false,10,2);
+          color:$light;
+          margin-bottom: 1%;
+}
+.box2{
+          border:1px solid $deep_purple;
+          @include name(false,5,2);
+          color:$light;          
+}
+

@@ -1,0 +1,17 @@
+@import 'colors';
+@mixin Area($width,$margin,$padding) {
+          width: $width;
+          margin: $margin;
+          padding: $padding;
+}
+@mixin registerBtn {
+          padding: 0.5%;
+          background-color: $btn_green;
+          color: white;
+          border-radius: 10%;
+          border: none;
+}
+@mixin radius {
+          border:none;
+}
+
