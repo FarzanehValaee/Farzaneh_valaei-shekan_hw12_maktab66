@@ -1,13 +1,16 @@
 function validateForm() {
   let validateFirstname = document.forms["registerForm"]["fname"].value;
   let validateLastname  = document.forms["registerForm"]["lname"].value;
-  if (!(validateFirstname)) {
-    return false;
+  switch(true) {
+    case (!(validateFirstname)||!(validateLastname)):
+      return false;                   
+    case validateFirstname.length<=3:
+      return false
+    case validateLastname.length<=3:
+        return false 
+    default:
+      return true
   }
-  else if(!(validateLastname)){
-            return false;                   
-  }
-  return true
 }
 async function delay(delayInms) {
   return new Promise(resolve  => {
@@ -16,11 +19,20 @@ async function delay(delayInms) {
     }, delayInms);
   });
 }
+function returnToPreviousPage() {
+  window.history.back();
+}
 //Function To Display Popup
 function div_show() {
   if(validateForm()){
     document.getElementById('popUp').style.display = "block";
     delay(80000);//waite for 8 second
+    document.getElementById('popUp').action="https://www.javatpoint.com/javascriptpages/valid.jsp"
+  }
+  else{
+    alert("validation failed false");
+    returnToPreviousPage();
+    return false;
   }
 }
   //Function to Hide Popup

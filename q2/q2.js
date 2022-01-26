@@ -19,7 +19,7 @@ function timeTest(){
           timeoutPromisResolve(3000);
 }
 let startTime = Date.now();
-timeTest() .then(()=>{}) .catch(e=>{
+timeTest().then(()=>{}).catch(e=>{
           console.log(e);
           let finishTime=Date.now();
           let timeTaken=finishTime-startTime;
