@@ -27,6 +27,7 @@ function div_show() {
   if(validateForm()){
     document.getElementById('popUp').style.display = "block";
     delay(80000);//waite for 8 second
+    
   }
   else{
     alert("validation failed false");
