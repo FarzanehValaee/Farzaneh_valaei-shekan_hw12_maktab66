@@ -13,7 +13,6 @@
                     input[type='text'], textarea{
                        @include Area(95%,1%,0.5%);
                        @include radius();
-                       color: $gray;
                     }
                     select{
                      @include Area(96%,1%,0.5%);
